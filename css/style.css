@@ -1,88 +1,58 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-form {
-  border: 3px solid #f1f1f1;
-}
-
-legend{ 
-  font-size: 125%;
-  font-style:italic;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-label{
-  display: inline-block;
-  margin-right:10px;
-  width:15%;
-}
-input {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-span{
-  margin-left:20%;
-  font-family: italic;
-  font-weight: bold;
-}
-
-textarea{
-  width: 100%;
-  height: 35vh;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-
-input[type=checkbox]{
-    display:inline;
-    width:inherit;
-}
-
-input[type=submit] {
-  background-color: #38803C;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-}
-
-input[type=submit]:hover {
-  opacity: 0.8;
-}
-
-
-
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (min-width: 770px) {
-  form{
-    width: 80%;
-    margin: 0 auto;
+  /* Create an accessible color palette using var()function */
+  /* https://www.w3schools.com/css/css3_variables.asp */
+  
+  form {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    width:70%;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #702082;
+    background: #CFC096;
   }
 
-  input{
-    width:80%;
+  .radio {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /* background: #575294; */
+    color: #702082;
   }
 
-  textarea{
-    width:80%;
-    height: 25vh;
- }
- 
- div + label{
-    line-height: 25vh;
-    vertical-align:top;
- }
-}
+  #name {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background: #CFC096;
+    color: #9B9A6D;
+  }
+
+  #message {
+    width: 100%;
+    padding: 10px;
+    resize: vertical;
+  }
+
+  input,
+  textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
