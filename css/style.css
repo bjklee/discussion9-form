@@ -4,53 +4,74 @@
   form {
     display: grid;
     grid-template-columns: 50% 50%;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     border-radius: 16px;
     width:70%;
     margin: 20px auto;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    color: #702082;
-    background: #CFC096;
+    color: black;
+    background: white;
   }
 
+  label {
+    font-family: 'Courier New', Courier, monospace;
+  }
   .radio {
     grid-column-start: 1;
     grid-column-end: 3;
     /* background: #575294; */
-    color: #702082;
+    color: black;
   }
 
   #name {
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     font-size: 18px;
     font-weight: bold;
-    background: #CFC096;
+    background: white;
     color: #9B9A6D;
   }
 
   #message {
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     resize: vertical;
   }
 
   input,
   textarea {
-    padding: 10px;
+    padding: 20px;
     border: 1px solid #ccc;
     width: 100%;
   }
 
+  button[type="reset"] {
+    width: 80%;
+    padding: 10px;
+    background-color: lightgray;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin-top: -38px;
+    margin-left: 60px;
+  }
+
   input[type="submit"] {
-    width: 100%;
+    width: 80%;
     padding: 10px;
     background-color: #4CAF50;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 10px;
   }
 
   input[type="submit"]:hover {
